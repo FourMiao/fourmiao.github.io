@@ -1,0 +1,156 @@
+/* General Options */
+body {
+  background-color: #F8F8F8; 
+}
+a {
+  text-decoration: none;
+}
+.page-header {
+  padding-bottom: 50px;
+}
+
+.post-container {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+
+  text-align: justify;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.post-container  p {
+  margin-left: 10px;
+  margin-right: 10px; 
+}
+
+.post-content img {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.post-content img.pull-left {
+  float: left;
+  margin-right: 10px;
+}
+
+.post-content img.pull-right {
+  float: right;
+  margin-left: 10px;
+}
+
+.post-content  {
+  max-width: 960px;
+  padding-bottom: 50px;
+}
+
+/* Set Width of Content */
+.container {
+    max-width: 960px; 
+}
+
+/* No underline in headline links */
+h2 > a:link {
+    text-decoration: none; 
+}
+
+/* Center titles and pictures */
+.entry-title, .instagram-img, .center {
+    text-align: center; 
+}
+
+/* Set icon size */
+.icon {
+  color: #222;
+  font-size: 32px; 
+}
+
+/* Post information bar */
+.info-bar {
+    margin-bottom: 0; 
+}
+.info-item {
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+  border-top: 1px solid #eee; 
+}
+
+/* Navbar */
+.navbar + .docs-section {
+    border-top-width: 0; 
+}
+.navbar,
+.navbar-spacer {
+    display: block;
+    width: 100%;
+    height: 6.5rem;
+    background-color: #F8F8F8;
+    z-index: 99;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee; 
+}
+.navbar-spacer {
+    display: none; 
+}
+.navbar > .container {
+    width: 100%; 
+}
+
+.navbar-left {
+    float: left;
+    list-style: none;
+    text-align: left;
+    margin-bottom: 0; 
+    position: relative;
+}
+.navbar-right {
+    float: right;
+    list-style: none;
+    text-align: right;
+    margin-bottom: 0; 
+    position: relative;
+}
+.navbar-item {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0; 
+}
+.navbar-link {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: .2rem;
+    margin-right: 35px;
+    text-decoration: none;
+    line-height: 6.5rem;
+    color: #222; 
+}
+.navbar-link.active {
+    color: #33C3F0; 
+}
+.navbar {
+    position: relative;
+    top: 0;
+    left: 0; 
+}
+.navbar-spacer {
+    display: block; 
+}
+
+.read-more {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 20px;
+}
+
+.read-more a {
+  text-decoration: none;
+}
