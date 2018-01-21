@@ -1,38 +1,38 @@
-var userFeed = new Instafeed({
-        get: 'user',
-        userId: 361018940,
-        accessToken: '361018940.467ede5.ab481cfcaafd4454a1ea333429e3d3c7',
-        // template: '<a href="" target="_blank"><img src="" /></a>',
-        useHttp: true,
-        limit: 30,
-        sortBy: 'random',
-        resolution: 'thumbnail',
-        mock: true,
-        links: false,
-        custom: {
-          images: [],
-    	  data: {},
-        },
-        success: function (data) {
+// var userFeed = new Instafeed({
+//         get: 'user',
+//         userId: 361018940,
+//         accessToken: '361018940.467ede5.ab481cfcaafd4454a1ea333429e3d3c7',
+//         // template: '<a href="" target="_blank"><img src="" /></a>',
+//         useHttp: true,
+//         limit: 30,
+//         sortBy: 'random',
+//         resolution: 'thumbnail',
+//         mock: true,
+//         links: false,
+//         custom: {
+//           images: [],
+//     	  data: {},
+//         },
+//         success: function (data) {
 		
-	  var insta = data.data;
-	  this.options.custom.data = insta;
-          for (var i=0, tot=insta.length; i < tot; i++) {
-            var created_time = insta[i].created_time;
-	    var images = insta[i].images;
-	    properties = {'created_time': created_time, 'images': images};
-	    this.options.custom.images.push(properties);
-            };
+// 	  var insta = data.data;
+// 	  this.options.custom.data = insta;
+//           for (var i=0, tot=insta.length; i < tot; i++) {
+//             var created_time = insta[i].created_time;
+// 	    var images = insta[i].images;
+// 	    properties = {'created_time': created_time, 'images': images};
+// 	    this.options.custom.images.push(properties);
+//             };
 
-	  var images = this.options.custom.images;
-	  console.log(images);
-	  $('.instagram-img').each(function (index) {
-		console.log(images[index]);
-	  	$(this).html("<img class='u-max-full-width' src='" + images[index].images.standard_resolution.url + "' />"); 
-	    });
-        }
-    });
-    userFeed.run();
+// 	  var images = this.options.custom.images;
+// 	  console.log(images);
+// 	  $('.instagram-img').each(function (index) {
+// 		console.log(images[index]);
+// 	  	$(this).html("<img class='u-max-full-width' src='" + images[index].images.standard_resolution.url + "' />"); 
+// 	    });
+//         }
+//     });
+//     userFeed.run();
 
 $(document).ready(function() {
     var $nav = $('.navbar'),
