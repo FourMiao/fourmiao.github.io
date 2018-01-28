@@ -123,6 +123,13 @@ h2 > a:link {
     display: inline-block;
     margin-bottom: 0; 
 }
+
+.device-only {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 0; 
+}
+
 .navbar-link {
     text-transform: uppercase;
     font-size: 11px;
@@ -141,6 +148,7 @@ h2 > a:link {
     top: 0;
     left: 0; 
 }
+
 .navbar-spacer {
     display: block; 
 }
@@ -154,4 +162,25 @@ h2 > a:link {
 .read-more a {
   text-decoration: none;
   color: #1EAEDB;
+}
+
+/*Tablet*/
+@media (max-width: 700px) {
+  .navbar-item {
+    display: none;
+  }
+  .device-only {
+    display: inline-block;
+  }
+  .device-only a {
+    text-transform: none;
+    font-size: 20px;
+    color: #1EAEDB;
+  }
+}
+
+@media (min-width: 700px) {
+  .device-only {
+    display: none;
+  }
 }
